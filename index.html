@@ -10,16 +10,19 @@
     </style> <!-- se quita subrayado links  -->
 </head>
 <body>
-    <header> <!-- parte superior de la pagina -->
-        <div class="encabezado"> 
-            <h1>Metal Design</h1>
-            <a href="./index.html">Inicio</a>
-            <a href="./pages/galpones.html">Galpones</a>
-            <a href="./pages/trabajos.html">Trabajos</a>
-            <a href="./pages/nosotros.html">Nosotros</a>
-            <a href="./pages/botoncontacto.html">Contacto</a>
+    <header> <!-- Navbar responsive -->
+        <div class="navbar">
+            <div class="logo">Metal Design</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/galpones.html">Galpones</a></li>
+                <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/botoncontacto.html">Contacto</a></li>
+            </ul>
         </div>
-</header>
+    </header>
 <main> <!-- Imagen principal con el texto superpuesto y el boton de contacto -->
 <div class="imagen-con-texto"> 
     <img src="assets/img/galpones-industriales 1.png" alt="imagen galpon">
@@ -50,5 +53,11 @@
         <br><a href="./pages/botoncontacto.html"><button>SOLICITAR PRESUPUESTO</button></a>
 </div>
 </footer>
+        <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
