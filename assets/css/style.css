@@ -92,6 +92,9 @@ header div{
     font-weight: bold;
     text-align: center;
 } /* imagen principal */
+.imagen-con-texto img{
+  width: 100%;
+}
 
 button{
     padding: 10px 15px;
