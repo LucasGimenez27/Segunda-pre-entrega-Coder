@@ -55,6 +55,7 @@
               width: 100%;
               background: #333;
               padding: 10px 0;
+              z-index: 1000;
           }
 
           .nav-links.active {
