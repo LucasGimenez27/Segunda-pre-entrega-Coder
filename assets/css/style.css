@@ -13,6 +13,7 @@
           background: #333;
           padding: 15px 20px;
           color: white;
+          z-index: 1000;
       }
 
       .logo {
@@ -185,6 +186,15 @@ button:hover {
 .presupuesto h2{
   font-size: 70%;
 }
+
+#galpones-card {
+      flex-direction: column;
+      align-items: center;
+  }
+
+.card {
+      width: 90%; /* Se adapta al ancho del celular */
+  }
 }
 /* aca */
 
