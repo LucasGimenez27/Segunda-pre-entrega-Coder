@@ -10,14 +10,17 @@
     </style>
 </head>
 <body id="pagina-2">
-    <header id="barra-nav"> <!-- parte superior de la pagina -->
-        <div class="encabezado"> 
-            <h1>Metal Design</h1>
-            <a href="/index.html">Inicio</a>
-            <a href="./galpones.html">Galpones</a>
-            <a href="./trabajos.html">Trabajos</a>
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./botoncontacto.html">Contacto</a>
+    <header> <!-- Navbar responsive -->
+        <div class="navbar">
+            <div class="logo">Metal Design</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/galpones.html">Galpones</a></li>
+                <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/botoncontacto.html">Contacto</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -33,5 +36,11 @@
         <a href="../pages/BotonContacto.html"><button id="button-pag2">Trabajemos Juntos!</button></a>
     </section>
 </main>
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

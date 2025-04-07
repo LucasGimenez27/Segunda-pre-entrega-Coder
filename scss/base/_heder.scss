@@ -1,0 +1,21 @@
+header {
+    background-color: rgba(255, 255, 255, 0.9098039216);
+    color: #373838;
+  }
+  
+  header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .encabezado nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .encabezado a {
+    color: #373838;
+}
